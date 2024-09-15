@@ -1,0 +1,7 @@
+CREATE TABLE Suppliers (
+    Supplier_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Supplier_Name VARCHAR(255),
+    Contact VARCHAR(15),
+    Email VARCHAR(100),
+    Address VARCHAR(255)
+);
