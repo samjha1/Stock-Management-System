@@ -1,0 +1,7 @@
+CREATE TABLE Stock_Out (
+    Stock_Out_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Product_ID INT,
+    Quantity INT,
+    Date_Sold DATE,
+    FOREIGN KEY (Product_ID) REFERENCES Products(Product_ID)
+);
