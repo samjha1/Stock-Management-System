@@ -1,0 +1,9 @@
+CREATE TABLE Stock_In (
+    Stock_In_ID INT PRIMARY KEY AUTO_INCREMENT,
+    Product_ID INT,
+    Quantity INT,
+    Date_Received DATE,
+    Supplier_ID INT,
+    FOREIGN KEY (Product_ID) REFERENCES Products(Product_ID),
+    FOREIGN KEY (Supplier_ID) REFERENCES Suppliers(Supplier_ID)
+);
